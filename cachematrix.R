@@ -3,6 +3,8 @@
 
 ## Write a short comment describing this function
 
+## This function given below creates a special "makeCacheMatrix" object that can cache the inverse of a matrix rather than computing repeatedly.
+
 makeCacheMatrix <- function(x = matrix()) {      ## making a cache matrix
     datamatrix <- NULL     ## initialize the cache matrix 'datamatrix' with NULL value
     setmatrix <- function(y){    ## defining the method 'setmatrix' to set the value of the matrix
@@ -19,6 +21,7 @@ makeCacheMatrix <- function(x = matrix()) {      ## making a cache matrix
 }
 
 ## Write a short comment describing this function
+## This function computes the inverse of the special "matrix" returned by makeCacheMatrix above. If the inverse has already been calculated (and the matrix has not changed), then the cachesolve should retrieve the inverse from the cache.Computing the inverse of a square matrix can be done with the solve function.
 
 cacheSolve <- function(x, ...) {    ## defined function to find the inverse of the matrix using 'cacheSolve'
         ## Return a matrix that is the inverse of 'x'
